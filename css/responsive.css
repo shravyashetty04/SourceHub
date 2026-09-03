@@ -162,7 +162,22 @@ html, body {
   /* Comparison Section */
   .comparison-container {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 18px;
+  }
+
+  .comparison-vs-center {
+    margin: 4px 0;
+  }
+
+  .vs-connector-svg {
+    display: none;
+  }
+
+  .comparison-highlights-bar {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 24px 20px;
+    border-radius: 20px;
   }
 
   /* Pricing Engine */
@@ -397,6 +412,16 @@ html, body {
 
   .comparison-header h3 {
     font-size: 1.15rem;
+  }
+
+  .comparison-highlights-bar {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 20px 16px;
+  }
+
+  .highlight-bar-item {
+    gap: 14px;
   }
 
   /* Pricing Engine Controls */
