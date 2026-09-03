@@ -563,16 +563,52 @@ html, body {
   }
 
   /* Map Container on Mobile */
+  .interactive-map-card {
+    padding: 16px 12px;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   .map-svg-container {
-    height: 320px;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .map-svg-container svg {
+    max-width: 100%;
+    height: auto;
   }
 
   .hub-details-card {
-    padding: 24px 16px;
+    padding: 22px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 18px;
+  }
+
+  .hub-city-name {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    word-break: break-word;
+    margin-bottom: 8px;
   }
 
   .hub-capacity-stats {
     grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 18px 0;
+  }
+
+  .capacity-stat-box {
+    padding: 12px 14px;
+  }
+
+  .hub-details-card .btn {
+    width: 100%;
+    min-height: 46px;
+    justify-content: center;
   }
 
   /* Conversion Banner */
