@@ -270,44 +270,6 @@
   font-weight: 800;
 }
 
-/* Floating Location Card (Bottom Right) */
-.hero-location-card {
-  background: #FFFFFF;
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  padding: 18px 22px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  box-shadow: var(--shadow-lg), 0 0 20px rgba(0, 166, 140, 0.08);
-  max-width: 350px;
-}
-
-.location-icon-box {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: var(--brand-teal-surface);
-  border: 1px solid var(--brand-teal-border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--brand-teal);
-  flex-shrink: 0;
-}
-
-.location-info h4 {
-  font-size: 0.98rem;
-  font-weight: 800;
-  color: var(--text-primary);
-  margin-bottom: 2px;
-}
-
-.location-info p {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
 /* Bottom Full-Width Elevated White Glass Metrics Bar */
 .hero-glass-stats-bar {
   background: #FFFFFF;

@@ -148,11 +148,6 @@ html, body {
     max-width: 100%;
   }
 
-  .hero-location-card {
-    max-width: 100%;
-    width: 100%;
-  }
-
   .hero-glass-stats-bar {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
