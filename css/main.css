@@ -1,0 +1,260 @@
+/* ==========================================================================
+   SOURCEHUB.IN - CORE DESIGN SYSTEM & BRAND FOUNDATION
+   Bright Clean White & Vibrant Logo Teal Identity (No Black Backgrounds)
+   - Canvas: Pure White (#FFFFFF) & Soft Porcelain Slate (#F8FAFC, #F1F5F9)
+   - Brand Logo Teal: #00A68C, #00C49F, #00DFB6
+   - Brand Charcoal Text: #1E232A, #0F172A
+   - Subdued Slate: #475569, #64748B
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700;1,800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,600;1,700;1,800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Bright Light Canvas */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F8FAFC;
+  --bg-tertiary: #F1F5F9;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #FFFFFF;
+  --bg-glass-light: rgba(255, 255, 255, 0.92);
+
+  /* Vibrant Brand Logo Teal Accents */
+  --brand-teal: #00A68C;
+  --brand-teal-bright: #00C49F;
+  --brand-teal-mint: #00DFB6;
+  --brand-teal-dark: #008772;
+  --brand-teal-deep: #006D5B;
+  --brand-teal-surface: rgba(0, 166, 140, 0.08);
+  --brand-teal-surface-hover: rgba(0, 166, 140, 0.14);
+  --brand-teal-border: rgba(0, 166, 140, 0.25);
+  --brand-teal-glow: rgba(0, 166, 140, 0.35);
+
+  /* High Contrast Typography */
+  --text-primary: #1E232A;
+  --text-secondary: #334155;
+  --text-muted: #64748B;
+  --text-light: #94A3B8;
+  --text-white: #FFFFFF;
+
+  /* Borders & Shadows */
+  --border-subtle: #E2E8F0;
+  --border-light: #CBD5E1;
+  --border-teal: rgba(0, 166, 140, 0.35);
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.10), 0 6px 18px rgba(0, 0, 0, 0.05);
+  --shadow-teal: 0 8px 25px rgba(0, 166, 140, 0.30);
+
+  /* Fonts */
+  --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif-italic: 'Playfair Display', 'Plus Jakarta Sans', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Layout */
+  --max-width: 1320px;
+  --header-height: 80px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+  
+  /* Transitions */
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Global Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.container-wide {
+  max-width: 1380px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.text-teal {
+  color: var(--brand-teal);
+}
+
+/* Pulse Dot */
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--brand-teal);
+  box-shadow: 0 0 8px var(--brand-teal);
+  position: relative;
+  display: inline-block;
+}
+
+.pulse-dot::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: 1px solid var(--brand-teal);
+  animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.6); opacity: 1; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+/* Primary and Secondary Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 13px 26px;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-smooth);
+  position: relative;
+  letter-spacing: -0.01em;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #00C49F 0%, #00A68C 100%);
+  color: #FFFFFF;
+  box-shadow: 0 4px 18px rgba(0, 166, 140, 0.35);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #00DFB6 0%, #00C49F 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 166, 140, 0.45);
+}
+
+.btn-secondary {
+  background: #FFFFFF;
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-secondary);
+  border-color: var(--brand-teal);
+  color: var(--brand-teal);
+  transform: translateY(-2px);
+}
+
+.btn-sm {
+  padding: 8px 18px;
+  font-size: 0.84rem;
+  border-radius: var(--radius-full);
+}
+
+.btn-lg {
+  padding: 15px 30px;
+  font-size: 1.02rem;
+}
+
+/* Clean Sections */
+.section-white {
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  padding: 96px 0;
+  position: relative;
+}
+
+.section-slate {
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  padding: 96px 0;
+  position: relative;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.badge-teal {
+  background: var(--brand-teal-surface);
+  color: var(--brand-teal-dark);
+  border: 1px solid var(--brand-teal-border);
+}

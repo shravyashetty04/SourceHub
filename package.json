@@ -1,0 +1,19 @@
+{
+  "name": "sourcehub-redesign",
+  "version": "2.0.0",
+  "description": "SourceHub.in - India's Smart Omnichannel Retail Supply & Distribution Platform",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "b2b",
+    "fmcg",
+    "retail",
+    "supply-chain",
+    "ev-logistics",
+    "omnichannel"
+  ],
+  "author": "SourceHub Team",
+  "license": "ISC"
+}
