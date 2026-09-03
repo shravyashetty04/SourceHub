@@ -420,7 +420,7 @@
 
 .comparison-container {
   display: grid;
-  grid-template-columns: 1fr 64px 1fr;
+  grid-template-columns: 1fr 100px 1fr;
   align-items: center;
   gap: 0;
   position: relative;
@@ -430,7 +430,7 @@
 .comparison-card {
   background: #FFFFFF;
   border-radius: 24px;
-  padding: 36px 32px;
+  padding: 38px 36px;
   position: relative;
   transition: all var(--transition-normal);
 }
@@ -450,18 +450,18 @@
   align-items: center;
   gap: 12px;
   margin-bottom: 26px;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
   border-bottom: 1px solid var(--border-subtle);
 }
 
 .comparison-header-icon-circle {
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.82rem;
+  font-size: 0.86rem;
   font-weight: 800;
   color: #FFFFFF;
   flex-shrink: 0;
@@ -477,14 +477,16 @@
 
 .problem-card .comparison-header h3 {
   color: #E11D48;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 800;
+  white-space: nowrap;
 }
 
 .solution-card .comparison-header h3 {
   color: #00A68C;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 800;
+  white-space: nowrap;
 }
 
 .comparison-list {
